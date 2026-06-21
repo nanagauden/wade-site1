@@ -1,0 +1,416 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f4f2eb;
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "Questrial", sans-serif;
+}
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #30244d;
+  padding: 10px 40px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+  font-family: "Questrial", sans-serif;
+}
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-logo {
+  height: 58px;
+  width: auto;
+  display: block;
+  image-rendering: high-quality;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-item {
+  font-size: 20px;
+  color: #efefef;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: color 0.2s, background-color 0.2s;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nav-item:hover, .nav-item.active
+ {
+  color: #00d4d4;
+  background-color: rgba(255,255,255,0.07); 
+  text-decoration: none;
+} 
+
+/* .linha_tempo{
+  background-color: #322550;
+  color: white;
+  border: radius 20px #008B8B;
+  border-radius: 5%;
+  height: 200px;
+  width: 200px;
+  flex-wrap: wrap;
+} */
+.inicio::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+}
+.inicio{
+    position: relative;
+    /* border: 5px solid #5abec1; */
+}
+
+.inicio img{
+    width: 100%;
+    height: 500px; /* ajuste como quiser */
+    object-fit: cover;
+    display: block;
+}
+
+.inicio h2{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+
+    z-index: 2;
+}
+h2{
+    text-align: center;
+    color: #5abec1;
+    display: absolute;
+    z-index: 3;
+}
+.titulo_inicial{
+    margin: 50px;
+    text-align: center;
+    color: #322550;
+    font-size: 50px;
+}
+.inicio img{
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+.texto p{
+    width: 60%;
+    margin-bottom: 20px;  
+}  
+.texto ::after{
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: 800px;
+    right: 1270px;
+
+    background: #e5c7f7;
+    border-radius: 50%;
+
+    z-index: -1;
+} 
+.texto{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 20px;
+    color:#7159a6;  
+    position: relative;
+    text-align: justify;
+    /* border: solid red 1px; */
+}
+.texto::before{
+    content: "";
+
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: 10px;
+    right: -250px;
+
+    background: #b9f0eb;
+    border-radius: 50%;
+
+    z-index: -1;
+} 
+  
+
+.logo img{
+    width: 180px;
+    height: 180px;
+}
+/* Rodape produzida por Gabriel */
+
+.contatos-sec {
+  background-color: #160f2b;
+  padding: 0;
+}
+
+.contatos-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 5%;
+}
+
+.contatos-header {
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.contatos-header h2 {
+  color: #008B8B;
+  font-family: "Questrial", sans-serif;
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.contatos-sub {
+  color: rgba(239,239,239,0.6);
+  font-family: "Questrial", sans-serif;
+  font-size: 19px;
+}
+
+.contatos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 60px;
+}
+
+.contato-card {
+  background-color: rgba(48,36,77,0.7);
+  border: 1px solid rgba(0,139,139,0.2);
+  border-radius: 14px;
+  padding: 24px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: "Questrial", sans-serif;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.contato-card:hover {
+  background-color: rgba(0,139,139,0.15);
+  border-color: #008B8B;
+  transform: translateY(-3px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.contato-card.no-link {
+  cursor: default;
+}
+
+.contato-card.no-link:hover {
+  transform: none;
+  background-color: rgba(48,36,77,0.7);
+  border-color: rgba(0,139,139,0.2);
+}
+
+.contato-icon-wrap {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0,139,139,0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #008B8B;
+}
+
+.contato-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.contato-info h4 {
+  color: #008B8B;
+  font-family: "Questrial", sans-serif;
+  font-size: 17px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+
+.contato-info p {
+  color: #efefef;
+  font-family: "Questrial", sans-serif;
+  font-size: 15px;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.rodape {
+  border-top: 1px solid rgba(0,139,139,0.2);
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-logo {
+  height: 48px;
+  width: auto;
+  opacity: 0.85;
+  image-rendering: high-quality;
+}
+
+.rodape p {
+  color: rgba(239,239,239,0.35);
+  font-family: "Questrial", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .barra {
+    padding: 10px 20px;
+  }
+
+  .nav-logo {
+    height: 44px;
+  }
+
+  .nav-item {
+    font-size: 16px;
+    padding: 6px 12px;
+  }
+
+  .hero-container {
+    height: 520px;
+  }
+
+  .hero-titulo {
+    font-size: 44px;
+  }
+
+  .hero-sub {
+    font-size: 20px;
+  }
+
+  .hero-overlay {
+    padding-left: 6%;
+  }
+
+  .sobre,
+  .marcas-sec,
+  .app-sec,
+  .download-sec,
+  .revenda-sec {
+    padding: 50px 6%;
+  }
+
+  .sobre-content h2,
+  .sec-titulo,
+  .download-content h2,
+  .revenda-texto h2,
+  .contatos-header h2 {
+    font-size: 32px;
+  }
+
+  .divider-v {
+    display: none;
+  }
+
+  .steps-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .steps-col {
+    max-width: 100%;
+  }
+
+  .contatos-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .badges {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .badge {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .hist-titulo {
+    font-size: 36px;
+  }
+
+  .hist-sub {
+    font-size: 17px;
+  }
+
+  .timeline::before {
+    left: 16px;
+  }
+
+  .timeline-item {
+    width: 100%;
+    align-self: flex-start !important;
+    padding-left: 48px !important;
+    padding-right: 0 !important;
+    text-align: left !important;
+  }
+
+  .tl-dot {
+    left: 8px !important;
+    right: auto !important;
+  }
+
+  .hist-sec-titulo {
+    font-size: 30px;
+  }
+}

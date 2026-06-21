@@ -1,0 +1,472 @@
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Questrial", sans-serif;
+}
+
+
+.container{
+ position: relative;
+    display: inline-block; /* Faz o container ficar do tamanho da imagem */
+     width: 100vw; /* Largura total da tela */
+box-shadow: inset rgba(0,  0 , 0 ,0.5);
+  
+   
+    
+}
+ .container img{
+    
+    width: 100vw;
+    height:600px;
+    padding: 0;
+    
+
+ }
+
+
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #30244d;
+  padding: 10px 40px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.4);
+}
+
+.nav-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  flex-shrink: 0;
+}
+
+.nav-logo {
+  height: 58px;
+  width: auto;
+  display: block;
+  image-rendering: high-quality;
+  -webkit-font-smoothing: antialiased;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  list-style: none;
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-item {
+  font-size: 20px;
+  color: #efefef;
+  text-decoration: none;
+  font-family: "Questrial", sans-serif;
+  padding: 8px 20px;
+  border-radius: 8px;
+  transition: color 0.2s, background-color 0.2s;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.nav-item:hover,
+.nav-item.active {
+  color: #00d4d4;
+  background-color: rgba(255,255,255,0.07);
+  text-decoration: none;
+  
+}
+
+
+
+
+
+.titulo{
+    position: absolute; /* Posiciona o texto em relação à imagem */
+        top: 80%; /* Move o texto para o meio vertical */
+        left: 15%; /* Move o texto para o meio horizontal */
+        transform: translate(-50%, -50%); /* Centraliza perfeitamente */
+        color: #efefef; /* Cor do texto */
+        font-size: 100px; /* Tamanho da fonte */
+    font-family: "Questrial", sans-serif;
+        
+        
+        padding: 5px;
+        border-radius: 5px;
+}
+
+
+.wade {
+ display: flex;
+ flex-direction: row;
+background-color:#f4f2eb;
+
+}
+
+
+.wade p{
+   
+   overflow-wrap: break-word;
+   font-size: 30px;
+   justify-content: center;
+   text-align: center;
+   font-family: "Questrial", sans-serif;
+   color: #000000;
+   padding-right: 50px;
+   padding-top: 80px;
+   
+}
+ span{
+   color:#4e3e75;
+   font-weight: bold;
+   font-family: "Questrial", sans-serif;
+}
+
+.wade img{
+   height: 350px;
+   width: 350px;
+   border-radius: 50px;
+   justify-content: center;
+}
+.text h1{
+   color:#4e3e75;
+   font-family: "Questrial", sans-serif;
+   font-size: 50px;
+   justify-content: left;
+   padding-left: 20px;
+}
+.produto{
+   display: flex;
+   flex-direction: column;
+   background-color: #30244d;
+ font-family: "Questrial", sans-serif;
+padding-left: 80px;
+color: #008B8B;
+font-size: 20px;
+}
+.produto h1{
+   margin-top: 10px;
+}
+.Cards {
+    display: flex;
+    flex-direction: row; /* Garante que fiquem em linha */
+    gap: 20px;           /* Cria um espaçamento de 20px entre os cards */
+    flex-wrap: wrap;     /* Se não couberem na tela (ex: celular), eles quebram para a linha de baixo */
+    padding: 20px 0;
+    
+   
+}
+
+/* Opcional: Define um tamanho máximo para os cards não esticarem demais */
+.p1 {
+
+    width: 250px;        /* Ajuste a largura como preferir */
+    box-sizing: border-box;
+    background-color: #f4f2eb;
+    border-radius: 8px;
+   
+}
+
+/* Opcional: Garante que a imagem do produto se ajuste ao tamanho do card */
+.p1 img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;  /* Deixa os cantos da imagem arredondados */
+}
+
+.p1:hover{
+    transform: translateY(-10px);
+    cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.Info{
+   word-break: break-all;
+}
+
+.wade2{
+   display: flex;
+   flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center; 
+  gap: 20px; 
+   background-color:#7abfbc;
+}
+
+.wade2 p{
+    overflow-wrap: break-word;
+   font-size: 30px;
+   justify-content: center;
+   text-align: center;
+   font-family: "Questrial", sans-serif;
+   color: #000000;
+   padding-left: 50px;
+   padding-top: 10px;
+   
+}
+.wade2 h1{
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+ font-size: 100px;
+  padding-left: 50px;
+  
+
+}
+.text2{
+   align-items: center;
+   margin:50px;
+}
+
+.text2 h1{
+   color:#4e3e75;
+   font-family: "Questrial", sans-serif;
+   font-size: 50px;
+   text-align: left;
+ padding-left: 30px;
+padding-bottom: 10px;
+}
+
+.text2 p{
+   
+   align-items: center;
+}
+
+.produto2{
+   display: flex;
+   flex-direction: column;
+   background-color: #f4f2eb;
+ font-family: "Questrial", sans-serif;
+padding-left: 80px;
+color: #7abfbc;
+font-size: 20px;
+}
+
+.produto2 h1{
+   margin-top: 10px;
+}
+
+
+
+.p2 {
+
+    width: 250px;        /* Ajuste a largura como preferir */
+    box-sizing: border-box;
+    background-color: #f4f2eb;
+    border-radius: 8px;
+    border-color: #696969;
+    border-style: solid;
+    border-width: 1px;
+    
+   
+}
+
+.p2 img {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;  /* Deixa os cantos da imagem arredondados */
+    
+}
+
+.p2:hover{
+  
+    transform: translateY(-10px);
+    cursor: pointer;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.BlueSafe{
+
+  align-items: center;
+
+}
+
+
+
+.befarm{
+ display: flex;
+ flex-direction: row;
+background-color:#A2C279;
+
+}
+
+.befarm p{
+   overflow-wrap: break-word;
+   font-size: 30px;
+   justify-content: center;
+   text-align: center;
+   font-family: "Questrial", sans-serif;
+   color: #000000;
+   padding-right: 50px;
+   padding-left: 20px;
+   padding-top: 20px;
+   margin-bottom: 10px;
+   
+
+}
+
+.befarm h1{
+ color:#4e3e75;
+   font-family: "Questrial", sans-serif;
+   font-size: 50px;
+   justify-content: left;
+   padding-left: 10px;
+   margin-top: 10px;
+}
+
+.produto3{
+   display: flex;
+   flex-direction: column;
+   background-color: #EDCDDE;
+ font-family: "Questrial", sans-serif;
+padding-left: 80px;
+color: #7abfbc;
+font-size: 20px;
+}
+.produto3 h1{
+   padding-top: 10px;
+}
+.contatos-sec {
+  background-color: #160f2b;
+  padding: 0;
+}
+
+.contatos-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 70px 5%;
+}
+
+.contatos-header {
+  text-align: center;
+  margin-bottom: 54px;
+}
+
+.contatos-header h2 {
+  color: #008B8B;
+  font-family: "Questrial", sans-serif;
+  font-size: 44px;
+  margin-bottom: 12px;
+}
+
+.contatos-sub {
+  color: rgba(239,239,239,0.6);
+  font-family: "Questrial", sans-serif;
+  font-size: 19px;
+}
+
+.contatos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 18px;
+  margin-bottom: 60px;
+}
+
+.contato-card {
+  background-color: rgba(48,36,77,0.7);
+  border: 1px solid rgba(0,139,139,0.2);
+  border-radius: 14px;
+  padding: 24px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-family: "Questrial", sans-serif;
+  text-decoration: none;
+  color: inherit;
+  transition: background-color 0.2s, border-color 0.2s, transform 0.2s;
+  cursor: pointer;
+  min-width: 0;
+}
+
+.contato-card:hover {
+  background-color: rgba(0,139,139,0.15);
+  border-color: #008B8B;
+  transform: translateY(-3px);
+  text-decoration: none;
+  color: inherit;
+}
+
+.contato-card.no-link {
+  cursor: default;
+}
+
+.contato-card.no-link:hover {
+  transform: none;
+  background-color: rgba(48,36,77,0.7);
+  border-color: rgba(0,139,139,0.2);
+}
+
+.contato-icon-wrap {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(0,139,139,0.2);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #008B8B;
+}
+
+.contato-info {
+  min-width: 0;
+  flex: 1;
+}
+
+.contato-info h4 {
+  color: #008B8B;
+  font-family: "Questrial", sans-serif;
+  font-size: 17px;
+  margin-bottom: 4px;
+  white-space: nowrap;
+}
+
+.contato-info p {
+  color: #efefef;
+  font-family: "Questrial", sans-serif;
+  font-size: 15px;
+  word-break: break-all;
+  overflow-wrap: break-word;
+  line-height: 1.4;
+}
+
+.rodape {
+  border-top: 1px solid rgba(0,139,139,0.2);
+  padding-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.footer-logo {
+  height: 48px;
+  width: auto;
+  opacity: 0.85;
+  image-rendering: high-quality;
+}
+
+.rodape p {
+  color: rgba(239,239,239,0.35);
+  font-family: "Questrial", sans-serif;
+  font-size: 14px;
+  text-align: center;
+}
