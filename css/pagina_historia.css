@@ -71,16 +71,6 @@ body{
   background-color: rgba(255,255,255,0.07); 
   text-decoration: none;
 } 
-
-/* .linha_tempo{
-  background-color: #322550;
-  color: white;
-  border: radius 20px #008B8B;
-  border-radius: 5%;
-  height: 200px;
-  width: 200px;
-  flex-wrap: wrap;
-} */
 .inicio::after{
     content: "";
     position: absolute;
@@ -117,6 +107,7 @@ body{
   height: 75rem;
   width: 100%;
   position: relative;
+  margin: 0;
 }
 
 .linha_tempo::before {
@@ -141,7 +132,7 @@ body{
   position: relative;
   left: 17%;
   top: 50px;
-
+  transition: 0.3s;
 
 }
 .p2{
@@ -155,7 +146,7 @@ body{
   position: relative;
   left: 55%;
   top: 120px;
-
+  transition: 0.3s;
 }
 .p3{
   background-color:#30244d ;
@@ -168,7 +159,7 @@ body{
   position: relative;
   left: 17%;
   top: 50px;
-
+  transition: 0.3s;
 }
 .p4{
   background-color:#30244d ;
@@ -181,7 +172,7 @@ body{
   position: relative;
   left: 55%;
   top: 120px;
-  
+  transition: 0.3s;
 }
 .p5{
     background-color:#30244d ;
@@ -194,6 +185,7 @@ body{
   position: relative;
   left: 17%;
   top: 50px;
+  transition: 0.3s;
 
   
 }
@@ -208,6 +200,7 @@ body{
   position: relative;
   left: 55%;
   top: 120px;
+  transition: 0.3s;
   
 }
 .p1:hover, .p2:hover, .p3:hover, .p4:hover, .p5:hover, .p6:hover{
@@ -219,6 +212,7 @@ body{
   width: 25rem;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transform: translateY(-10px);
+  transition: 0.3s;
 }
 
 .detalhe{
